@@ -16,6 +16,9 @@ module LegalPages
   mattr_accessor :domain
   @@domain = "example.com"
 
+  mattr_accessor :personal_data_required
+  @@personal_data_required = false
+
   mattr_accessor :facebook_plugin_share
   @@facebook_plugin_share = false
 

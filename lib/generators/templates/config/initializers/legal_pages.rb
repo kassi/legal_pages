@@ -20,6 +20,10 @@ LegalPages.setup do |config|
     # "Tel.: what ever"
   ]
 
+  # Set to true if this page requires a user to register with at least some
+  # personal data (like email)
+  # config.personal_data_required = false
+
   # Set to true if you use the simple facebook share button.
   # config.facebook_plugin_share = false
 
