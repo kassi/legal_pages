@@ -7,11 +7,10 @@ require "legal_pages/version"
 Gem::Specification.new do |s|
   s.name        = "legal_pages"
   s.version     = LegalPages::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of LegalPages."
-  s.description = "TODO: Description of LegalPages."
+  s.authors     = ["Karsten Silkenbäumer"]
+  s.homepage    = "http://www.kluks.de"
+  s.summary     = "Provides configurable pages for standard legal documents for web sites."
+  s.description = "Provides configurable pages for standard legal documents for web sites."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
