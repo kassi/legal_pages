@@ -1,0 +1,45 @@
+<% content_for :title, "Impressum" %>
+
+<dl class="legal-content">
+  <dt>
+    Herstellung und Betrieb dieses privat motivierten Projektes
+  </dt>
+  <dd>
+    <p class="note">(Angaben gemäß § 5 TMG)</p>
+    <p>
+      <%= LegalPages.name %>
+      <% LegalPages.address.each do |line| %>
+        <br><%= line %>
+      <% end %>
+    </p>
+  </dd>
+  <dt>
+    Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
+  </dt>
+  <dd>
+    <p>
+      <%= LegalPages.name %>
+      <% LegalPages.address.each do |line| %>
+        <br><%= line %>
+      <% end %>
+    </p>
+  </dd>
+  <dt>Kontakt</dt>
+  <dd>
+    <p>
+      <% LegalPages.contact.each do |line| %>
+        <div><%= line %></div>
+      <% end %>
+    </p>
+  </dd>
+  <dt>Weiterführende Informationen</dt>
+  <dd>
+    <p>
+      Informationen über die rechtliche Lage dieser Webseite und ihrer Angebote finden Sie im
+      <a href="<%= LegalPages.mount_path %>/disclaimer">Haftungsausschluss</a>
+    </p>
+    <p>
+      Informationen über den Datenschutz und die Privatsphäre finden Sie in den <a href="<%= LegalPages.mount_path %>/privacy">Datenschutzbestimmungen</a>
+    </p>
+  </dd>
+</dl>
