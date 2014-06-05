@@ -17,8 +17,7 @@ module LegalPages
     private
 
     def main_app_url_helper?(method)
-        (method.to_s.end_with?('_path') or method.to_s.end_with?('_url')) and
-        main_app.respond_to?(method)
+      (method.to_s.end_with?('_path') or method.to_s.end_with?('_url')) and main_app.respond_to?(method)
     end
   end
 end
