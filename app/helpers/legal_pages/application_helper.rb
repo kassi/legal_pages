@@ -2,7 +2,7 @@ module LegalPages
   module ApplicationHelper
     # Make named routes from the main app available so that the pages can use
     # the main app's layout.
-    def method_missing method, *args, &block
+    def method_missing(method, *args, &block)
       if main_app_url_helper?(method)
         main_app.send(method, *args)
       else
