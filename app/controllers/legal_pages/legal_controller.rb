@@ -1,7 +1,5 @@
 module LegalPages
   class LegalController < ApplicationController
-    layout 'layouts/legal_pages'
-
     def index
     end
 
