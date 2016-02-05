@@ -10,14 +10,14 @@ module LegalPages
       end
     end
 
-    def respond_to?(method)
-      main_app_url_helper?(method) or super
+    def respond_to?(method, include_all = false)
+      main_app_url_helper?(method, include_all) or super
     end
 
     private
 
-    def main_app_url_helper?(method)
-      (method.to_s.end_with?('_path') or method.to_s.end_with?('_url')) and main_app.respond_to?(method)
+    def main_app_url_helper?(method, include_all = false)
+      (method.to_s.end_with?('_path') or method.to_s.end_with?('_url')) and main_app.respond_to?(method, include_all)
     end
   end
 end
